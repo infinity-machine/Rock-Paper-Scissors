@@ -13,16 +13,17 @@
             <p>SELECT YOUR MOVE</p>
             <input readonly type ="text" id="score" placeholder="COMPUTER:0 PLAYER:0">
         </div>
-        <form>
-        <select>
-            <option id="rock" >ROCK</option>
-            <option id="paper" >PAPER</option>
-            <option id="scissors" >SCISSORS</option>
-        </select>
-        </form>
+        <div id = "stack">
+            <form>
+                <select id="selectbox">
+                <option id="rock" >ROCK</option>
+                <option id="paper" >PAPER</option>
+                <option id="scissors" >SCISSORS</option>
+            </select>
+            </form>
         <button id="shoot" >SHOOT!</button>
-        <br>
         <input readonly type="text" id="conclusion" placeholder="ROCK PAPER SCISSORS!!! ROCK PAPER SCISSORS!!! ROCK PAPER SCISSORS!!!">
+        </div>
     </div>
 <script src="script.js"></script>
 </body>

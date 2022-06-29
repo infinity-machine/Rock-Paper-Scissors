@@ -13,8 +13,9 @@ function rockPaperScissors() {
     if (rock.selected) playerMove = 'rock';
     if (paper.selected) playerMove = 'paper';
     if (scissors.selected) playerMove = 'scissors';
-    //WIN/LOSS DEFINITIONS
+    //SCORES TO SCOREBOX
     var scoreText = document.querySelector('#score');
+    //WIN/LOSS DEFINITIONS
     if (compMove === playerMove) {
         result = 'tie'
     }
