@@ -19,6 +19,7 @@
     justify-content: space-between; 
 }
 #score {
+    padding-left: 40px;
     width: 250px;
     background: transparent;
     color: black;
@@ -43,10 +44,10 @@ h1 {
     color: blanchedalmond;
 }
 #conclusion {
-    padding-top: 60px;
-    width: 550px;
-    background: transparent;
+    margin-top: 60px;
+    background: white; opacity: .7;
     font-weight: bold;
+    text-align: center;
 }
 p {
     color: rgb(0, 0, 0);
