@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    height: 500px;
+    background: url(https://images2.minutemediacdn.com/image/upload/c_crop,h_1192,w_2121,x_0,y_111/v1554740077/shape/mentalfloss/16253-istock-874688920.jpg?itok=9r0m1b4G);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between; 
+}
+
+#score {
+    width: 250px;
+}
+h1 {
+    color: blanchedalmond;
+}
+
+#conclusion {
+    width: 550px;
+}
+
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 200%;
+}
