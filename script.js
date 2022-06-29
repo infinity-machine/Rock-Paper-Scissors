@@ -13,8 +13,6 @@ function rockPaperScissors() {
     if (rock.selected) playerMove = 'rock';
     if (paper.selected) playerMove = 'paper';
     if (scissors.selected) playerMove = 'scissors';
-    //SCORES TO SCOREBOX
-    var scoreText = document.querySelector('#score');
     //WIN/LOSS DEFINITIONS
     if (compMove === playerMove) {
         result = 'tie'
@@ -43,13 +41,15 @@ function rockPaperScissors() {
         result = 'loss'
         compScore++
     }
-    //GAME OUTPUT TO CONCLUSION
+    //SCORE OUTPUT
+    var scoreText = document.querySelector('#score');
     scoreText.value = 'COMPUTER' + ' ' + compScore + ' ' + 'PLAYER' + ' ' + playerScore
+    //CONCLUSION OUTPUT
     if (result === 'tie') {
         return 'computer selected' + ' ' + compMove + ', ' + 'you selected' + ' '+ playerMove + '... ' + 'ITS A TIE! PLAY AGAIN!'
     }
     if (result === 'loss') {
-        return 'computer selected' + ' ' + compMove + ', ' + 'you selected' + ' '+ playerMove + '... ' + 'YOU LOST DUMMY!'
+        return 'computer selected' + ' ' + compMove + ', ' + 'you selected' + ' '+ playerMove + '... ' + 'YOU LOSE DUMMY!'
     }
     if (result === 'win') {
         return 'computer selected' + ' ' + compMove + ', ' + 'you selected' + ' '+ playerMove + '... ' + 'YOU WIN! GOOD JOB!'
